@@ -25,6 +25,9 @@
     const theme = THEMES[name];
     if (!theme) return;
 
+    // Set data-theme on <html> for CSS selectors
+    document.documentElement.setAttribute('data-theme', name);
+
     // Swap theme CSS
     let themeLink = document.getElementById('theme-css');
     if (!themeLink) {
