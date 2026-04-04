@@ -21,7 +21,7 @@
   --teal:         #35AFA8;  /* Türkis – Links */
   --teal-dark:    #2A9088;
   --font-hand:    'Lobster Two', cursive;
-  --font-body:    'Lato', sans-serif;
+  --font-body:    'Open Sans Condensed', sans-serif;
   --radius:       6px;
   --max-w:        860px;
 }
@@ -34,7 +34,7 @@ body {
   background-color: var(--cream);
   color: var(--brown-text);
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.7;
 }
 
