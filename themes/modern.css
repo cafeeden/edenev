@@ -23,6 +23,22 @@
 
 /* ===== THEME: Modern – Layout ===== */
 
+/* Logo: Sticker-Effekt */
+[data-theme="modern"] .nav-logo-img {
+  transform: rotate(-3deg);
+  filter:
+    drop-shadow(3px 0 0 #fff)
+    drop-shadow(-3px 0 0 #fff)
+    drop-shadow(0 3px 0 #fff)
+    drop-shadow(0 -3px 0 #fff)
+    drop-shadow(0 5px 10px rgba(0,0,0,0.35));
+  transition: transform 0.2s;
+}
+
+[data-theme="modern"] .nav-logo:hover .nav-logo-img {
+  transform: rotate(0deg);
+}
+
 /* Navbar: Logo links, Links rechts */
 [data-theme="modern"] .navbar {
   justify-content: space-between;
