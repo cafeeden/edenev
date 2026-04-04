@@ -10,8 +10,8 @@
 }
 
 :root {
-  --cream:        #F5E6C8;  /* warmes Creme – helle Sektionen */
-  --cream-dark:   #E6D4A8;  /* warmes Beige – dunkle Sektionen */
+  --cream:        rgb(251, 239, 219);  /* helle Sektionen */
+  --cream-dark:   rgb(246, 223, 186);  /* dunkle Sektionen */
   --brown-dark:   #2C1508;  /* sehr dunkles Warmbraun – Navbar */
   --brown-mid:    #4C382F;  /* mittleres Braun */
   --brown-text:   #2C1508;  /* Fließtext */
@@ -186,11 +186,11 @@ address { font-style: normal; }
   justify-content: center;
   min-height: 52vh;
   padding: 4rem 1.5rem 2rem;
-  background: var(--cream);
+  background: var(--cream-dark);
 }
 
 .hero-box {
-  background: #E0C470;  /* warmes Gold wie im Screenshot */
+  background: rgb(245, 198, 139);
   border: 2.5px solid #7A5060;  /* mauve/braun-lila Rahmen */
   border-radius: 16px;
   padding: 2.5rem 3rem;
@@ -390,6 +390,7 @@ address { font-style: normal; }
   padding: 4rem 1.5rem;
 }
 
+
 .section-dark {
   background: var(--cream-dark);
   padding: 4rem 1.5rem;
@@ -418,7 +419,7 @@ address { font-style: normal; }
 
 /* ---------- INFO SECTION ---------- */
 .section-info {
-  background: var(--cream);
+  background: var(--cream-dark);
   padding: 4rem 1.5rem 3rem;
 }
 
