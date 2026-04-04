@@ -12,7 +12,7 @@
 :root {
   --cream:        rgb(251, 239, 219);  /* helle Sektionen */
   --cream-dark:   rgb(246, 223, 186);  /* dunkle Sektionen */
-  --brown-dark:   #2C1508;  /* sehr dunkles Warmbraun – Navbar */
+  --brown-dark:   rgb(76, 56, 48);  /* Navbar */
   --brown-mid:    #4C382F;  /* mittleres Braun */
   --brown-text:   #2C1508;  /* Fließtext */
   --orange:       #C86010;  /* Kupfer-Orange – Sektionsüberschriften */
@@ -129,7 +129,7 @@ address { font-style: normal; }
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.35);
 }
 
@@ -140,7 +140,7 @@ address { font-style: normal; }
 }
 
 .nav-logo-img {
-  height: 44px;
+  height: 53px;
   width: auto;
   display: block;
 }
@@ -154,8 +154,8 @@ address { font-style: normal; }
 
 .nav-links a {
   color: #c8b080;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.2rem;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
   transition: color 0.15s, background 0.15s;
