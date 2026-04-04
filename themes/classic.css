@@ -1,0 +1,22 @@
+/* ===== THEME: Classic ===== */
+:root {
+  --cream:            rgb(251, 239, 219);
+  --cream-dark:       rgb(246, 223, 186);
+  --brown-dark:       rgb(76, 56, 48);
+  --brown-mid:        #4C382F;
+  --brown-text:       #2C1508;
+  --orange:           #C86010;
+  --orange-btn:       #D08820;
+  --orange-hover:     #A85010;
+  --teal:             #35AFA8;
+  --teal-dark:        #2A9088;
+  --font-hand:        'Lobster Two', cursive;
+  --font-body:        'Open Sans Condensed', sans-serif;
+  --font-nav:         'Lobster Two', cursive;
+  --nav-link-color:   rgb(246, 223, 186);
+  --hero-box-bg:      rgb(245, 198, 139);
+  --hero-box-border:  #7A5060;
+  --btn-radius:       30px;
+  --radius:           6px;
+  --max-w:            860px;
+}

@@ -1,0 +1,22 @@
+/* ===== THEME: Minimal ===== */
+:root {
+  --cream:            #FAFAF8;
+  --cream-dark:       #F0EBE3;
+  --brown-dark:       #2C2420;
+  --brown-mid:        #4A3E38;
+  --brown-text:       #2C2420;
+  --orange:           #2D8C7A;
+  --orange-btn:       #2D8C7A;
+  --orange-hover:     #1E6B5C;
+  --teal:             #2D8C7A;
+  --teal-dark:        #1E6B5C;
+  --font-hand:        'Playfair Display', serif;
+  --font-body:        'Source Sans 3', sans-serif;
+  --font-nav:         'Source Sans 3', sans-serif;
+  --nav-link-color:   #F0EBE3;
+  --hero-box-bg:      #F0EBE3;
+  --hero-box-border:  #2D8C7A;
+  --btn-radius:       4px;
+  --radius:           4px;
+  --max-w:            920px;
+}

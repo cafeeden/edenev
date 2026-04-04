@@ -1,0 +1,22 @@
+/* ===== THEME: Modern ===== */
+:root {
+  --cream:            #FAF7F2;
+  --cream-dark:       #EFE6D8;
+  --brown-dark:       #1A120B;
+  --brown-mid:        #3A2A1E;
+  --brown-text:       #2A1A0E;
+  --orange:           #B85A0A;
+  --orange-btn:       #B85A0A;
+  --orange-hover:     #8F4208;
+  --teal:             #2D8C7A;
+  --teal-dark:        #1E6B5C;
+  --font-hand:        'Fraunces', serif;
+  --font-body:        'Inter', sans-serif;
+  --font-nav:         'Inter', sans-serif;
+  --nav-link-color:   #EFE6D8;
+  --hero-box-bg:      #EDE0CC;
+  --hero-box-border:  #B85A0A;
+  --btn-radius:       8px;
+  --radius:           4px;
+  --max-w:            980px;
+}

@@ -10,20 +10,25 @@
 }
 
 :root {
-  --cream:        rgb(251, 239, 219);  /* helle Sektionen */
-  --cream-dark:   rgb(246, 223, 186);  /* dunkle Sektionen */
-  --brown-dark:   rgb(76, 56, 48);  /* Navbar */
-  --brown-mid:    #4C382F;  /* mittleres Braun */
-  --brown-text:   #2C1508;  /* Fließtext */
-  --orange:       #C86010;  /* Kupfer-Orange – Sektionsüberschriften */
-  --orange-btn:   #D08820;  /* Bernstein – Buttons */
-  --orange-hover: #A85010;
-  --teal:         #35AFA8;  /* Türkis – Links */
-  --teal-dark:    #2A9088;
-  --font-hand:    'Lobster Two', cursive;
-  --font-body:    'Open Sans Condensed', sans-serif;
-  --radius:       6px;
-  --max-w:        860px;
+  --cream:            rgb(251, 239, 219);
+  --cream-dark:       rgb(246, 223, 186);
+  --brown-dark:       rgb(76, 56, 48);
+  --brown-mid:        #4C382F;
+  --brown-text:       #2C1508;
+  --orange:           #C86010;
+  --orange-btn:       #D08820;
+  --orange-hover:     #A85010;
+  --teal:             #35AFA8;
+  --teal-dark:        #2A9088;
+  --font-hand:        'Lobster Two', cursive;
+  --font-body:        'Open Sans Condensed', sans-serif;
+  --font-nav:         'Lobster Two', cursive;
+  --nav-link-color:   rgb(246, 223, 186);
+  --hero-box-bg:      rgb(245, 198, 139);
+  --hero-box-border:  #7A5060;
+  --btn-radius:       30px;
+  --radius:           6px;
+  --max-w:            860px;
 }
 
 html {
@@ -91,7 +96,7 @@ address { font-style: normal; }
 .btn {
   display: inline-block;
   padding: 0.65rem 1.6rem;
-  border-radius: 30px;
+  border-radius: var(--btn-radius);
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
@@ -153,8 +158,8 @@ address { font-style: normal; }
 }
 
 .nav-links a {
-  color: rgb(246, 223, 186);
-  font-family: 'Lobster Two', cursive;
+  color: var(--nav-link-color);
+  font-family: var(--font-nav);
   font-size: 1.2rem;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
@@ -190,8 +195,8 @@ address { font-style: normal; }
 }
 
 .hero-box {
-  background: rgb(245, 198, 139);
-  border: 2.5px solid #7A5060;  /* mauve/braun-lila Rahmen */
+  background: var(--hero-box-bg);
+  border: 2.5px solid var(--hero-box-border);
   border-radius: 16px;
   padding: 2.5rem 3rem;
   text-align: center;
@@ -538,6 +543,38 @@ address { font-style: normal; }
 
 .legal-col a {
   color: var(--teal);
+}
+
+/* ---------- THEME SWITCHER ---------- */
+.theme-switcher {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: 1rem;
+}
+
+.theme-btn {
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  color: var(--nav-link-color);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  text-transform: uppercase;
+}
+
+.theme-btn:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+.theme-btn.active {
+  background: var(--orange-btn);
+  border-color: var(--orange-btn);
+  color: #fff;
 }
 
 /* ---------- RESPONSIVE ---------- */
