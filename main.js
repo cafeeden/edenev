@@ -15,13 +15,20 @@
     }
   }
 
+  function updateVisible() {
+    const prev = (current - 1 + thumbs.length) % thumbs.length;
+    const next = (current + 1) % thumbs.length;
+    thumbs.forEach((t, i) => {
+      const show = i === prev || i === current || i === next;
+      t.classList.toggle('visible', show);
+      if (show) loadThumb(t);
+    });
+  }
+
   function goTo(index) {
     thumbs[current].classList.remove('active');
     current = (index + thumbs.length) % thumbs.length;
-    loadThumb(thumbs[current]);
-    // Preload neighbours
-    loadThumb(thumbs[(current + 1) % thumbs.length]);
-    loadThumb(thumbs[(current - 1 + thumbs.length) % thumbs.length]);
+    updateVisible();
     mainImg.style.opacity = '0';
     setTimeout(() => {
       mainImg.src = thumbs[current].src;
@@ -29,8 +36,9 @@
       mainImg.style.opacity = '1';
     }, 150);
     thumbs[current].classList.add('active');
-    thumbs[current].scrollIntoView({ block: 'nearest', inline: 'nearest' });
   }
+
+  updateVisible();
 
   thumbs.forEach((thumb, i) => thumb.addEventListener('click', () => goTo(i)));
   prevBtn.addEventListener('click', () => goTo(current - 1));

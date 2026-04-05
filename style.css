@@ -369,16 +369,13 @@ address { font-style: normal; }
 
 .slideshow-thumbs {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
   gap: 0.5rem;
   margin-top: 0.8rem;
-  overflow-x: auto;
-  padding-bottom: 0.4rem;
-  scrollbar-width: thin;
-  scrollbar-color: var(--orange-btn) transparent;
 }
 
 .thumb {
+  display: none;
   width: 80px;
   height: 60px;
   object-fit: cover;
@@ -389,8 +386,9 @@ address { font-style: normal; }
   transition: opacity 0.2s, border-color 0.2s;
 }
 
-.thumb:hover  { opacity: 0.9; }
-.thumb.active { opacity: 1; border-color: var(--orange-btn); }
+.thumb.visible  { display: block; }
+.thumb:hover    { opacity: 0.9; }
+.thumb.active   { opacity: 1; border-color: var(--orange-btn); }
 
 /* ---------- SECTION STYLES ---------- */
 .section-light {
