@@ -20,3 +20,9 @@
   --radius:           6px;
   --max-w:            860px;
 }
+
+/* Highlight */
+.highlight {
+  color: var(--orange);
+  font-weight: 600;
+}

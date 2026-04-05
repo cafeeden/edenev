@@ -21,6 +21,12 @@
   --max-w:            680px;
 }
 
+/* Highlight */
+.highlight {
+  color: var(--teal);
+  font-weight: 600;
+}
+
 /* ===== THEME: Minimal – Layout ===== */
 
 /* Navbar: clean, kein Schatten */

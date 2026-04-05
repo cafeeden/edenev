@@ -21,6 +21,14 @@
   --max-w:            980px;
 }
 
+/* Highlight */
+.highlight {
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 1px;
+  font-weight: 600;
+}
+
 /* ===== THEME: Modern – Layout ===== */
 
 /* Navbar: Logo links, Links rechts */

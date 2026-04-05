@@ -92,6 +92,43 @@ if (toggle && navLinks) {
   });
 }
 
+// Consent-Loader für Google Maps & Calendar
+document.querySelectorAll('.consent-load-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const placeholder = btn.closest('.consent-placeholder');
+    const { src, type, height, title, link } = placeholder.dataset;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.width = '100%';
+    iframe.height = height || '400';
+    iframe.title = title || '';
+    iframe.style.border = '0';
+
+    if (type === 'map') {
+      iframe.style.borderRadius = '6px';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      if (link) {
+        const a = document.createElement('a');
+        a.href = link;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.setAttribute('aria-label', 'Karte öffnen');
+        a.appendChild(iframe);
+        placeholder.replaceWith(a);
+        return;
+      }
+    } else if (type === 'calendar') {
+      iframe.frameBorder = '0';
+      iframe.scrolling = 'no';
+    }
+
+    placeholder.replaceWith(iframe);
+  });
+});
+
 // Highlight active nav link on scroll
 const sections = document.querySelectorAll('section[id], div[id]');
 const links = document.querySelectorAll('.nav-links a');

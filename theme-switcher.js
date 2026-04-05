@@ -3,15 +3,15 @@
   const THEMES = {
     classic: {
       css: 'themes/classic.css',
-      fonts: 'https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400&family=Open+Sans+Condensed:wght@300;400;700&display=swap'
+      fonts: 'fonts/fonts.css'
     },
     modern: {
       css: 'themes/modern.css',
-      fonts: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Inter:wght@400;700&display=swap'
+      fonts: 'fonts/fonts.css'
     },
     minimal: {
       css: 'themes/minimal.css',
-      fonts: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;700&display=swap'
+      fonts: 'fonts/fonts.css'
     }
   };
 

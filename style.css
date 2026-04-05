@@ -92,6 +92,9 @@ address { font-style: normal; }
 .highlight-orange { color: var(--orange); }
 .highlight-teal   { color: var(--teal); }
 
+/* Highlight – Basis; Themes überschreiben dies */
+.highlight { font-weight: inherit; }
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-block;
@@ -407,6 +410,21 @@ address { font-style: normal; }
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
   background: #fff;
+}
+
+/* Consent-Platzhalter für Google-Dienste */
+.consent-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  background: var(--cream-dark);
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--brown-mid);
+  min-height: 120px;
 }
 
 /* ---------- BANK INFO ---------- */
