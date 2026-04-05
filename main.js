@@ -8,9 +8,20 @@
 
   let current = 0;
 
+  function loadThumb(thumb) {
+    if (thumb.dataset.src) {
+      thumb.src = thumb.dataset.src;
+      delete thumb.dataset.src;
+    }
+  }
+
   function goTo(index) {
     thumbs[current].classList.remove('active');
     current = (index + thumbs.length) % thumbs.length;
+    loadThumb(thumbs[current]);
+    // Preload neighbours
+    loadThumb(thumbs[(current + 1) % thumbs.length]);
+    loadThumb(thumbs[(current - 1 + thumbs.length) % thumbs.length]);
     mainImg.style.opacity = '0';
     setTimeout(() => {
       mainImg.src = thumbs[current].src;
