@@ -39,6 +39,7 @@
   }
 
   updateVisible();
+  thumbs[current].classList.add('active');
 
   thumbs.forEach((thumb, i) => thumb.addEventListener('click', () => goTo(i)));
   prevBtn.addEventListener('click', () => goTo(current - 1));
