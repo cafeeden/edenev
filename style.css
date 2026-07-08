@@ -19,8 +19,8 @@
   --orange:           #d9741a;   /* Brand – Burnt Orange */
   --orange-btn:       #d9741a;
   --orange-hover:     #c05f12;
-  --teal:             #2f9e9e;   /* Sekundär-Akzent / Links */
-  --teal-dark:        #1f7a7a;
+  --teal:             #17706f;   /* Sekundär-Akzent / Links (kräftig für Lesbarkeit) */
+  --teal-dark:        #0f5a5a;
   --color_42:         146, 86, 122;  /* Highlight-Farbe ("Wohnzimmer") */
   --font-hand:        'Lobster Two', cursive;
   --font-body:        'Open Sans Condensed', sans-serif;
@@ -212,14 +212,14 @@ address { font-style: normal; }
 
 .hero-box h1 {
   font-family: var(--font-hand);
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   color: var(--brown-text);
   line-height: 1.25;
   margin-bottom: 1.4rem;
 }
 
 .hero-sub {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--brown-text);
   margin-bottom: 0.3rem;
@@ -227,7 +227,7 @@ address { font-style: normal; }
 
 .hero-hours {
   color: var(--teal);
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin-bottom: 0.6rem;
 }
 
@@ -236,7 +236,7 @@ address { font-style: normal; }
 }
 
 .hero-note {
-  font-size: 0.88rem;
+  font-size: 1.35rem;
   color: var(--brown-text);
 }
 
@@ -621,7 +621,7 @@ address { font-style: normal; }
   }
 
   .hero-box h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .section-title { font-size: 2rem; }

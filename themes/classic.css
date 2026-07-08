@@ -8,8 +8,8 @@
   --orange:           #d9741a;
   --orange-btn:       #d9741a;
   --orange-hover:     #c05f12;
-  --teal:             #2f9e9e;
-  --teal-dark:        #1f7a7a;
+  --teal:             #17706f;   /* kräftig für Lesbarkeit */
+  --teal-dark:        #0f5a5a;
   --color_42:         146, 86, 122;  /* Highlight-Farbe ("Wohnzimmer") */
   --font-hand:        'Lobster Two', cursive;
   --font-body:        'Open Sans Condensed', sans-serif;
