@@ -37,6 +37,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7.25rem;   /* Ausgleich für fixierte Navbar (~103px) */
 }
 
 body {
