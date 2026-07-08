@@ -1,21 +1,24 @@
-/* ===== THEME: Classic ===== */
+/* ===== THEME: Classic — Farbkonzept "Eden" (aus Café-Eden-Screenshots) ===== */
 :root {
-  --cream:            rgb(251, 239, 219);
-  --cream-dark:       rgb(246, 223, 186);
-  --brown-dark:       rgb(76, 56, 48);
-  --brown-mid:        #4C382F;
-  --brown-text:       #2C1508;
-  --orange:           #C86010;
-  --orange-btn:       #D08820;
-  --orange-hover:     #A85010;
-  --teal:             #35AFA8;
-  --teal-dark:        #2A9088;
+  --cream:            #faf3e5;
+  --cream-dark:       #f3e9d6;
+  --brown-dark:       #493931;   /* Header/Navbar – exaktes Braun aus dem Logo */
+  --brown-mid:        #5a4636;
+  --brown-text:       #2c1c12;
+  --orange:           #d9741a;
+  --orange-btn:       #d9741a;
+  --orange-hover:     #c05f12;
+  --teal:             #2f9e9e;
+  --teal-dark:        #1f7a7a;
+  --color_42:         146, 86, 122;  /* Highlight-Farbe ("Wohnzimmer") */
   --font-hand:        'Lobster Two', cursive;
   --font-body:        'Open Sans Condensed', sans-serif;
   --font-nav:         'Lobster Two', cursive;
-  --nav-link-color:   rgb(246, 223, 186);
-  --hero-box-bg:      rgb(245, 198, 139);
-  --hero-box-border:  #7A5060;
+  --nav-link-color:   #f3e2c6;
+  --hero-box-bg:      #f6dcc0;
+  --hero-box-border:  #d9741a;
+  --border:           #e7dac2;
+  --border-strong:    #d8c6a6;
   --btn-radius:       30px;
   --radius:           6px;
   --max-w:            860px;
@@ -25,4 +28,12 @@
 .highlight {
   color: var(--teal);
   font-weight: 600;
+}
+
+/* Erster Kasten (Hero-Box): alle farbigen Akzente in Lila/Mauve */
+.hero-box .highlight,
+.hero-box .highlight-orange,
+.hero-box .hero-hours,
+.hero-box a {
+  color: rgb(var(--color_42));
 }

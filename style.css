@@ -10,22 +10,26 @@
 }
 
 :root {
-  --cream:            rgb(251, 239, 219);
-  --cream-dark:       rgb(246, 223, 186);
-  --brown-dark:       rgb(76, 56, 48);
-  --brown-mid:        #4C382F;
-  --brown-text:       #2C1508;
-  --orange:           #C86010;
-  --orange-btn:       #D08820;
-  --orange-hover:     #A85010;
-  --teal:             #35AFA8;
-  --teal-dark:        #2A9088;
+  /* Farbkonzept "Eden" – abgeleitet aus den Café-Eden-Screenshots */
+  --cream:            #faf3e5;   /* Seite / heller Hintergrund */
+  --cream-dark:       #f3e9d6;   /* vertiefte Flächen */
+  --brown-dark:       #493931;   /* Header/Navbar – exaktes Braun aus dem Logo */
+  --brown-mid:        #5a4636;
+  --brown-text:       #2c1c12;
+  --orange:           #d9741a;   /* Brand – Burnt Orange */
+  --orange-btn:       #d9741a;
+  --orange-hover:     #c05f12;
+  --teal:             #2f9e9e;   /* Sekundär-Akzent / Links */
+  --teal-dark:        #1f7a7a;
+  --color_42:         146, 86, 122;  /* Highlight-Farbe ("Wohnzimmer") */
   --font-hand:        'Lobster Two', cursive;
   --font-body:        'Open Sans Condensed', sans-serif;
   --font-nav:         'Lobster Two', cursive;
-  --nav-link-color:   rgb(246, 223, 186);
-  --hero-box-bg:      rgb(245, 198, 139);
-  --hero-box-border:  #7A5060;
+  --nav-link-color:   #f3e2c6;   /* Nav-Text auf dunklem Braun */
+  --hero-box-bg:      #f6dcc0;   /* Brand-Tint */
+  --hero-box-border:  #d9741a;   /* Orange-Akzentrahmen */
+  --border:           #e7dac2;   /* Rahmen */
+  --border-strong:    #d8c6a6;
   --btn-radius:       30px;
   --radius:           6px;
   --max-w:            860px;
@@ -505,7 +509,7 @@ address { font-style: normal; }
 /* ---------- FOOTER ---------- */
 .site-footer {
   background: var(--cream-dark);
-  border-top: 1px solid #d0ba90;
+  border-top: 1px solid var(--border-strong);
   padding: 1rem;
   text-align: center;
 }
@@ -529,7 +533,7 @@ address { font-style: normal; }
 }
 
 .footer-sep {
-  color: #9a7a50;
+  color: #b3a184;
 }
 
 /* ---------- IMPRESSUM / DATENSCHUTZ pages ---------- */
